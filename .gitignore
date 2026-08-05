@@ -1,0 +1,72 @@
+content = """# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual Environment
+venv/
+env/
+.env
+.venv
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Model files (use Git LFS if needed)
+*.h5
+*.pb
+*.tflite
+saved_model/
+
+# Data & Datasets
+data/
+datasets/
+*.csv
+*.zip
+*.tar.gz
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+"""
+
+with open(".gitignore", "w", encoding="utf-8") as f:
+    f.write(content)
+
+print(".gitignore saved!")
